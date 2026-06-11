@@ -42,7 +42,7 @@ variable "vpc_cidr" {
 
 variable "vpc_is_multicast" {
   description = "Specify the vpc is multicast when 'vpc_id' is not specified."
-  default     = true
+  default     = false
 }
 
 variable "vpc_dns_servers" {
@@ -70,7 +70,7 @@ variable "subnet_cidrs" {
 
 variable "subnet_is_multicast" {
   description = "Specify the subnet is multicast when 'vpc_id' is not specified."
-  default     = true
+  default     = false
 }
 
 variable "subnet_tags" {
